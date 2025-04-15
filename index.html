@@ -1,0 +1,34 @@
+<!-- latitude: 51.407765929020044; longitude:  0.42928049758817066; -->
+<!-- https://stackoverflow.com/questions/64917091/aframe-gltf-cube-env-map -->
+<!-- run with sudp npm i -g five-server@latest && five-server --port=8000 -->
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>Pop Ups</title>
+        <meta name="author" content="Balraj Bains: hello@blraj.com">
+        <meta name="description" content="Test permissions pop up styling">
+        <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.5.4/dist/aframe-extras.min.js"></script>
+        <script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/3.4.5/three.js/build/ar-threex-location-only.js'></script>
+        <script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/3.4.5/aframe/build/aframe-ar.js'></script>
+        <style src="style.css"></style>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <a-scene
+        loading-screen="enabled: false"
+        renderer="colorManagement: true; exposure: 1; toneMapping: ACESFilmic; 
+        logarithmicDepthBuffer: true; antialias: true; sortObjects: true;"
+        embedded arjs
+        >
+            <a-box  position="0 0 -5"
+            rotation="0 0 33"
+            scale="1 1 1"
+            color="#4CC3D9">
+            </a-box> 
+        </a-scene>
+    </body>
+</html>
